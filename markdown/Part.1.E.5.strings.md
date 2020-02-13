@@ -561,7 +561,7 @@ Complex is better than complicated."""
 # str.startswith(prefix[, start[, end]])
 print("s.lower().startswith('S'):", \
       s.lower().startswith('S'))
-print("s.lower().startswith('b, 10'):", \
+print("s.lower().startswith('b', 10):", \
       s.lower().startswith('b', 10))
 print("s.lower().startswith('e', 11, 20):", \
       s.lower().startswith('e', 11, 20))
@@ -579,7 +579,7 @@ print("s.lower().endswith('.', 10, 20):", \
 ```
 
     s.lower().startswith('S'): False
-    s.lower().startswith('b'): True
+    s.lower().startswith('b', 10): True
     s.lower().startswith('e', 11, 20): True
     s.lower().endswith('.'): True
     s.lower().endswith('.', 10): True
@@ -1036,7 +1036,7 @@ Python 针对数字常用的操作符和内建函数，按照**优先级**从低
 Python 用来处理数值的内建函数：
 
 > * `abs(n)` 函数返回参数 `n` 的*绝对值*；
-> * `int(n)` 用来将*浮点数字* `n` 换成*整数*；
+> * `int(n)` 用来将*浮点数字* `n` 转换成*整数*；
 > * `float(n)` 用来将*整数* `n` 转换成*浮点数字*；
 > * `divmod(n, m)` 用来计算  `n`  除以  `m`，返回两个整数，一个是*商*，另外一个是*余*；
 > * `pow(n, m)` 用来做乘方运算，返回 `n` 的 `m` *次方*；
